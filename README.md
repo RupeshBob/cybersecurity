@@ -1,100 +1,83 @@
 # CyberGuard
 
-A modern, responsive cybersecurity web application built with Next.js, Tailwind CSS, and TypeScript.
+**Category:** Web Security Tool  
+**Submitted to:** Digisuraksha Parhari Foundation (Powered by Infinisec Technologies Pvt. Ltd.)  
+**Final Submission Deadline:** 12 May 2025  
 
-## Features
+---
 
-### 1. Phishing URL Checker
-- Paste a URL to check if it's potentially malicious
-- Uses the VirusTotal API to scan URLs against 70+ security vendors
-- Displays scan results with color-coded indicators
-- Shows harmless, suspicious, and malicious counts
-- Provides a clear verdict: Safe, Suspicious, or Phishing
+## 1. Abstract
+CyberGuard is an all-in-one cybersecurity web application that empowers users to:
+- Instantly check URLs for phishing using the VirusTotal API v3  
+- Detect scam or malicious text messages with rule-based pattern analysis  
+- Assess password strength in real time with detailed feedback  
 
-### 2. Scam / Fake Message Detector
-- Analyze suspicious WhatsApp or SMS messages
-- Uses advanced rule-based detection to identify common scam patterns
-- Classifies messages as Safe, Suspicious Marketing, Scam, Phishing, or Uncertain
-- Detects urgency indicators and suspicious requests
-- Provides confidence level, explanation, and detected patterns
+By consolidating three essential security utilities into a single responsive UI, CyberGuard helps individuals and small organizations quickly identify and remediate common threats.
 
-### 3. Password Strength Checker
-- Check password strength as you type
-- Visual strength meter with color indicators
-- Detailed strength assessment based on multiple criteria
-- Personalized suggestions to improve password security
+---
 
-## Tech Stack
+## 2. Problem Statement
+With the surge in phishing campaigns and social-engineering scams, non-technical users often lack accessible tools to:
+1. Verify whether a link is malicious before clicking.  
+2. Spot scam or phishing messages masquerading as legitimate communication.  
+3. Choose strong passwords that resist brute-force and dictionary attacks.  
 
-- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
-- **Backend**: Next.js API Routes
-- **External API**: VirusTotal API
-- **Icons**: Lucide React
+CyberGuard addresses these gaps by offering an intuitive interface backed by industry-grade APIs and rule sets.
 
-## Local Development
+---
 
-1. Clone the repository
-\`\`\`bash
-git clone https://github.com/yourusername/cyberguard.git
-cd cyberguard
-\`\`\`
+## 3. Team
+- **Sanika Aroskar** (Full-Stack Developer)  
+- **Rupesh Jadhav** (Frontend Developer)  
 
-2. Install dependencies
-\`\`\`bash
-npm install
-\`\`\`
+---
 
-3. Create a `.env.local` file in the root directory and add your VirusTotal API key:
-\`\`\`
+## 4. Features
+1. **Phishing URL Checker**  
+   - Input any URL → scans via [VirusTotal API v3](https://www.virustotal.com/) → returns Safe/Suspicious/Phishing verdict  
+   - Color-coded counts of harmless, suspicious & malicious engines  
+
+2. **Scam / Fake Message Detector**  
+   - Paste WhatsApp or SMS text → advanced rule-based engine flags urgency, spoofing, common scam patterns  
+   - Classifies messages as Safe, Suspicious Marketing, Scam, Phishing, or Uncertain, with confidence level & explanation  
+
+3. **Password Strength Checker**  
+   - Live strength meter (Weak → Strong) based on length, character variety, entropy  
+   - Personalized suggestions to improve password security  
+
+---
+
+## 5. Tech Stack & Architecture
+- **Frontend:** Next.js (React) · TypeScript · Tailwind CSS  
+- **Backend:** Next.js API Routes  
+- **External API:** VirusTotal API v3  
+- **Icons:** Lucide React  
+
+![High-Level Architecture](docs/diagrams/architecture.png)
+
+---
+
+## 6. Live Demo
+🔗 https://cybersecurity-chi.vercel.app/  
+
+---
+
+## 7. Installation & Local Development
+```bash
+# 1. Clone repository
+git clone https://github.com/RupeshBob/cybersecurity.git
+cd cybersecurity
+
+# 2. Install dependencies
+pnpm install
+
+# 3. Create environment file
+cat > .env.local << EOF
 VIRUSTOTAL_API_KEY=your_api_key_here
-\`\`\`
+EOF
 
-4. Start the development server
-\`\`\`bash
-npm run dev
-\`\`\`
+# 4. Run in development mode
+pnpm run dev
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## VirusTotal API
-
-This application uses the VirusTotal API v3 to scan URLs for potential threats. To use this feature:
-
-1. Sign up for a free account at [VirusTotal](https://www.virustotal.com/)
-2. Get your API key from your account settings
-3. Add the API key to your environment variables as `VIRUSTOTAL_API_KEY`
-
-Note: The free tier of VirusTotal API has rate limits (4 requests per minute, 500 requests per day). For production use, consider upgrading to a premium plan.
-
-## Production Deployment
-
-For production deployment, you can use Vercel:
-
-\`\`\`bash
-npm run build
-npm run start
-\`\`\`
-
-Or deploy directly to Vercel:
-
-\`\`\`bash
-vercel
-\`\`\`
-
-Make sure to add your `VIRUSTOTAL_API_KEY` to your Vercel environment variables.
-
-## Security Considerations
-
-- The VirusTotal API key is kept secure on the server side
-- All user inputs are validated before processing
-- No sensitive data is stored or logged
-- HTTPS is used for all API requests
-- Security headers are added to all API responses
-
-## Disclaimer
-
-This application is for educational and demonstration purposes only. Do not rely solely on this tool for critical security decisions. Always use multiple security tools and best practices.
-
-## License
-
-MIT
+# 5. Open in browser
+http://localhost:3000
