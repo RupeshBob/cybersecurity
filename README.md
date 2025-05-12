@@ -57,8 +57,11 @@ CyberGuard addresses these gaps by offering an intuitive interface backed by ind
 
 ---
 
-## 6. Live Demo
-🔗 https://cybersecurity-chi.vercel.app/  
+## 6. Live Demo & Repository
+
+- 🔗 Live demo: https://cybersecurity-chi.vercel.app/
+- 🔗 Source code: https://github.com/RupeshBob/cybersecurity
+
 
 ---
 
