@@ -2,34 +2,29 @@
 
 **Category:** Web Security Tool  
 **Submitted to:** Digisuraksha Parhari Foundation (Powered by Infinisec Technologies Pvt. Ltd.)  
-**Final Submission Deadline:** 12 May 2025  
-
-```
 
 ---
 
 ## Screenshots
 
 ### Main Dashboard
-![Main Dashboard](working_ss.png)
+![Main Dashboard](assets/working_ss.png)
 
 ### Phishing URL Checker
-![Phishing URL Checker](url_checker_ss_0.png)
-![Phishing URL Checker](url_checker_ss_1.png)
+![Phishing URL Checker](assets/url_checker_ss_0.png)
+![Phishing URL Checker](assets/url_checker_ss_1.png)
 
 ### Scam Message Detector
-![Scam Message Detector](scam_message_detector_ss.png)
+![Scam Message Detector](assets/scam_message_detector_ss.png)
 
 ### Password Strength Checker
-![Password Strength Checker](password_strength.png)
-
-
-
+![Password Strength Checker](assets/password_strength.png)
 
 ---
 
 ## 1. Abstract
-CyberGuard is an all-in-one cybersecurity web application that empowers users to:
+
+CyberGuard is an all-in-one cybersecurity web application that empowers users to:  
 - Instantly check URLs for phishing using the VirusTotal API v3  
 - Detect scam or malicious text messages with rule-based pattern analysis  
 - Assess password strength in real time with detailed feedback  
@@ -39,7 +34,8 @@ By consolidating three essential security utilities into a single responsive UI,
 ---
 
 ## 2. Problem Statement
-With the surge in phishing campaigns and social-engineering scams, non-technical users often lack accessible tools to:
+
+With the surge in phishing campaigns and social-engineering scams, non-technical users often lack accessible tools to:  
 1. Verify whether a link is malicious before clicking.  
 2. Spot scam or phishing messages masquerading as legitimate communication.  
 3. Choose strong passwords that resist brute-force and dictionary attacks.  
@@ -49,12 +45,14 @@ CyberGuard addresses these gaps by offering an intuitive interface backed by ind
 ---
 
 ## 3. Team
+
 - **Sanika Aroskar** (Full-Stack Developer)  
 - **Rupesh Jadhav** (Frontend Developer)  
 
 ---
 
 ## 4. Features
+
 1. **Phishing URL Checker**  
    - Input any URL → scans via [VirusTotal API v3](https://www.virustotal.com/) → returns Safe/Suspicious/Phishing verdict  
    - Color-coded counts of harmless, suspicious & malicious engines  
@@ -70,6 +68,7 @@ CyberGuard addresses these gaps by offering an intuitive interface backed by ind
 ---
 
 ## 5. Tech Stack & Architecture
+
 - **Frontend:** Next.js (React) · TypeScript · Tailwind CSS  
 - **Backend:** Next.js API Routes  
 - **External API:** VirusTotal API v3  
@@ -87,6 +86,7 @@ CyberGuard addresses these gaps by offering an intuitive interface backed by ind
 ---
 
 ## 7. Installation & Local Development
+
 ```bash
 # 1. Clone repository
 git clone https://github.com/RupeshBob/cybersecurity.git
@@ -105,3 +105,4 @@ pnpm run dev
 
 # 5. Open in browser
 http://localhost:3000
+```
