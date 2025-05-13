@@ -4,6 +4,28 @@
 **Submitted to:** Digisuraksha Parhari Foundation (Powered by Infinisec Technologies Pvt. Ltd.)  
 **Final Submission Deadline:** 12 May 2025  
 
+```
+
+---
+
+## Screenshots
+
+### Main Dashboard
+![Main Dashboard](working_ss.png)
+
+### Phishing URL Checker
+![Phishing URL Checker](url_checker_ss_0.png)
+![Phishing URL Checker](url_checker_ss_1.png)
+
+### Scam Message Detector
+![Scam Message Detector](scam_message_detector_ss.png)
+
+### Password Strength Checker
+![Password Strength Checker](password_strength.png)
+
+
+
+
 ---
 
 ## 1. Abstract
@@ -61,7 +83,6 @@ CyberGuard addresses these gaps by offering an intuitive interface backed by ind
 
 - 🔗 Live demo: https://cybersecurity-chi.vercel.app/
 - 🔗 Source code: https://github.com/RupeshBob/cybersecurity
-
 
 ---
 
